@@ -1,1 +1,1 @@
-# Notlar
+NOTES
