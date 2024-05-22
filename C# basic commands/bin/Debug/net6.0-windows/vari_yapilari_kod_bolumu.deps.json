@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "vari_yapilari_kod_bolumu/1.0.0": {
+        "runtime": {
+          "vari_yapilari_kod_bolumu.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "vari_yapilari_kod_bolumu/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

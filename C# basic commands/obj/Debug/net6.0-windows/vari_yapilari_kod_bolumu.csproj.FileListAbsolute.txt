@@ -1,0 +1,17 @@
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\bin\Debug\net6.0-windows\vari_yapilari_kod_bolumu.exe
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\bin\Debug\net6.0-windows\vari_yapilari_kod_bolumu.deps.json
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\bin\Debug\net6.0-windows\vari_yapilari_kod_bolumu.runtimeconfig.json
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\bin\Debug\net6.0-windows\vari_yapilari_kod_bolumu.dll
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\bin\Debug\net6.0-windows\vari_yapilari_kod_bolumu.pdb
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.csproj.AssemblyReference.cache
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.Form1.resources
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.csproj.GenerateResource.cache
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.GeneratedMSBuildEditorConfig.editorconfig
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.AssemblyInfoInputs.cache
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.AssemblyInfo.cs
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.csproj.CoreCompileInputs.cache
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.dll
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\refint\vari_yapilari_kod_bolumu.dll
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.pdb
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\vari_yapilari_kod_bolumu.genruntimeconfig.cache
+C:\D\Nevsehir\gorsel\vari_yapilari_kod_bolumu\vari_yapilari_kod_bolumu\obj\Debug\net6.0-windows\ref\vari_yapilari_kod_bolumu.dll
