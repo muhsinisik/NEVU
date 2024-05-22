@@ -1,0 +1,356 @@
+
+Veri Yapıları Ve Algoritma
+
+Algoritma Nedir?
+Bir problemin çözümünde izlenecek yol. Algortima diğerlerinden ayıran yol belirli girdi ile belirli çıktı ile çıkmasıdır ve sonlu olmasıdır.  
+Program : Algoritmanın herhangi bir programla dili ile kodlanmasıdır 
+Veri Nedir: Algoritma tarafından kullanılan en temel elamanlara veri denir.
+Veri Yapısı  : Bellekte tutulma şekli
+Bir algoritmanın etkin anlaşılır ve doğru olabilmesi için  , algortimanın işleyeceği verilerin düzenlenmesi gerekir
+İyi bir yazılım için gereksinimler: Temiz bir tasarım, Kolay bakım , yönetim, güvenlilir, Kolay kullanımlı ,Hızlı algoritmalar
+Veri Yapılarına Neden İhtiyaç Vardır?
+Temiz kavramsal yapılar ve bu yapıları sunan çerçeve programları, daha etkin ve daha doğru program yazmayı sağlar.
+Veri Modellleri : 
+Bağlantılı Liste, Ağaç, Graf, Durum Makinası, VeriTabani-İlişkisel, Ağ Bağlantı
+
+İyi Bir Yazılım İçin Gereksinimler: 
+Temiz bir tasarım Kolay bakım ve yönetim Güvenilir,Kolay Kullanımlı,Hızlı Algoritmalar
+
+
+Liste Modeli: Aynı kümede olan verilerin ard arta sıralanması liste veri modeli çok satır tek sütün  En büyük avantajı Boyutu sınırlıyamazsın.
+Bağlantı Liste Modeli ise ondan ona ondan ona diye devam ediyor Pointer tutulur.
+Ağaç Veri Modeli: Hızlı Erişim, Esnek Bellek Kullanımı, Arama-Ekleme Maliyetleri,  Tasarım Esnekliği, Çok farklı problemlerle Model 
+Graft Veri Modeli: Modelleme Esnekliği, Üzerine  Tasarlanmış Algoritma Çokluğu,  En Kısa Yol, Yol ağacı ,Greddy Yöntemi ,DFS ve BFS Yaklaşımları ,Kuruksal Algoritması(BFS: Breadth-Firs Search , DPS: Depth First Search)
+Durum Makinesi Veri Modeli : Davranış Modelleme ,Ardaşıl Yaklaşım, Desen Uyuşması, Katar Arama, Gramer Çözümü Robotik Kodlamlarda  çok kullanılır.
+Bir işlemci  birim  zamanda kaç iş yapabilir cevap 1
+İlişikisel Veri Modeli 
+Bilgilerin Düzenli Saklanması, Hızlı arama/Sorgulama , Veriler arasında ilişli Oluşturulması ,İnternet Tarayıcı Ortamında Blgi Sorgulama ,Koruma ,Veriler
+
+Algoritmik Program Tasarı Nedir?
+Algoritmav nın Önemli Özellikleri 
+Yazılan komutların uygulanabilir olması  gereklidir.
+Her algoritmanın sonlanması çalıştrılan komut sayısının sonsuz olmaması gereklidir.
+Algoritmanın hazırlanırken,çözüm için yapılması gerekli işlemler,Öncelik sıraları göz önünde bulundurularak ayrıntılı bir biçimde tanımlanırlar.
+Verilen bir problemin bilgsayar ortamında çözülecek biçimde adım adım ortaya koyulması ve herhangi bir proglama aracıyla kodlanması sürecedir.
+Yazılan komutun tek bir anlama gelmesi ve herkes tarafından anlaşılır olması gereklidir her algoritmanın sonlanması çalıştırılan komut sayısının  sonsuz 
+olmaması gerekledir.
+Algoritma Süreci : Tasarım,Doğrulugunu İspat etme,Analiz,Uygulama,Test
+Kaba kodlarda while dongusu otomatik kendisi artar
+Bir değer atamak için genellikle  := <- 
+Metot,fonksiyon, her neyse onun isimleri  : Algoritma Adı{ parametre neyse o dizi ise dizi grup ise grup}
+
+Program  Tasarımı Yöntemleri
+Problem Analiz Şeması
+Yapısal Şema
+IPO Şeması
+Akış Şemaları
+Problem Analiz Şeması
+ Eldeki veri,Beklenen Sonuç Problemin Çözüm Süreci Çözüm Seçenekleri  
+
+IPO Şeması
+Girdi,Süreç,Modül Referansı,Çıktı
+
+Bir dizideki elamanların toplam ve çarpımı hesaplayan algoritmayı kaba kod kullanarak yapınız
+		
+Toplam_Carpım_Hesapla(dizi[n])
+Input: n adet tam sayıdan oluşan dizi 
+Output:  Dizi elemanlarının toplam ve çarpım sonucu
+Toplam <- 0
+carpım<- -1
+for i;= 1 TO N do 
+	toplam <- toplam+dizi[i]
+	carpim <- carpim * dizi[i]
+ENDFOR
+Return(toplam,carpim)
+
+Dizinin aritmetik ortalamsı bulan ve sonucu geri gönderen <<ortalama_bul>> isimli fonkisyonun kaba kodunu ve C dili ile programın yazınız.
+
+ ortalama_bul(dizi[n])
+Input: n adet tam sayıdan oluşan dizi
+Output: Dizi elemanların ortalaması
+ toplam :=0
+ Sonuc := 0
+for i:=1 to n do
+	toplam <- toplam+dizi[i]
+Endfor  :  					Endfor o for bitti diğer forun başlangıçı Return zaten sonuç döndürmek  
+Sonuc= toplam / n
+Return(Sonuc)
+
+C dilindeki versiyonu
+float ortalama_bul(float[A],int n)
+{
+	float ortalama,toplam=0;
+	int k;
+	for(k=0;k<n;k++)
+		toplam=toplam+A[k]
+	ortalama = toplam/n;
+	return ortalama;
+}
+If mutluysan then 
+	gülümse
+Else ıf üzgünsen
+	kaşlarını çat
+Else 
+	normal yüz ifadesi
+ENDIF
+
+Program Çalışma Hızı ve Bellek Gereksinimi(Algoritma Analizi)
+
+Algoritmanın icra edilmesi sırasında duyacağı kaynak miktarının tahmin edilmesine Algoritma Analizi denir 
+Performanstan daha önemli ne vardır?
+Doğruluk , Güvenlik , Basit olması lazım ,Modüler olması lazım,Kullanıcı dostu,İşlevsellik ,Genişletilebilirlik yani esnek olması lazım
+Veri sayısı arttıkça bakım kolaylıgı zorlaşır.
+
+Neden algoritmalar ve başarımla uğraşırız ?
+Başarım bilge işlemenin para birimidir 
+Başarım genelde yapılabilir olanla imkansızın arasındaki çizgiyi tanımlar.
+
+
+Zaman  Yönergeler veya talimatlar zaman alabilir. Bir algoritma için gerekli olan zaman nasıl tahmin edilir? Gerekli olan zaman nasıl azaltılabilir  Algoritmanın çalışma zamanın ne etkliler Algoritma ne kadar hızlı bir performans gösteriyor
+Alan  Veri yapıları yer kaplar Ne tür veri yapıları kullanılabilir. Veri yapılarının seçimi çalışma zamanı nasıl etkiler 
+
+Benzer problemleri çözmek için iki algortimanın zaman verimliliğini nasıl karşılaştırabiliriz 
+Naif(Basit) yaklaşım : Bir programlaama dilinde bu algoritmaların uygulanması ve çalışma zamanlarının karşılaştırılması 
+
+Algortimalar yerine programların karşılaştırılmasından bazı zorluklar vardır:
+
+Programanın kullabilceği veri nedir  Analiz yöntemi veriye bağımlı olmamalıdır. 
+
+Hangi bilgisayarı kullanmak gerekir?  Algoritmanın verimliliği belirli bir bilgisayara bağımlı olmadan karşılaştırılmalııdır.
+
+Algoritmanın etklinliğini değerlendirmek için belirli bir çözmde anlamlı olan işlemlerin kaç adet oldugu sayılır. ******
+
+Anlamlı olan işlemler hakkında önemli bilgiler:
+
+Eğer problem boyutu  çok küçük ise algoritmanın verimliliğini muhtemelen ihmal edebilirisinz
+Algoritmanın zaman ve bellek gereksiniimi arasındaki ağırılı dengelemek zorundayız.
+
+
+
+En Kötü Durum Önemli:  Tüm olumsuz koşulların oluşması  durumunda algortimanın çözüm üretmesi 
+için gerekli maks  çalışma zamanıdır.
+En iyi Durum : 	Bir algoritma için çalışma zamanı maliyet veya karmaşıklık hesaplarında en iyi
+sonucun elde edildiği duruma denir. Bir giriş yapısınında hızlı çalışan yavaş bir algoritma ile hile yapmak
+
+
+float ekbul(float A[],n)
+{
+Float Ek;
+Ek=A[0];
+int i;
+For(i=1;i<n;i++)
+{
+	if(A[i]<Ek)
+		Ek=A[i];
+
+}
+	Return Ek;
+}
+
+Asimpotik Analiz 
+Bir algoritmanın orantılı zaman gerkesinimi büyüme oranı olarak bilinir
+T(n) nin büyüme oranı algoritmanın hesaplama karmaşıklığıdır.
+Hesaplama Karmaşıklığı: Belirli bir uygulamadan bağımsız olarak n ile değişen T(n) çalışma zamanı daha doğru bir şekilde bulmayı sağlar.
+
+BİG- O simgelemi  önemli
+Tüm n>n_0 değerleri için sabitler c>0  n_0>0
+Big O  en yüksek n li ifade  karmaşıklık = Bigo
+0<= f(n)<=c.g(n)  c>0 n>0
+  Bunun sorularında mesala 2n^2 = n^3  için c kaç olmalıdır gibi mesala n=1 c 2 olur gibi tek bir değerin sağlaması fonksiyonun üst simgesi oldugunu gösteirr
+
+ x^2+2x+1 büyüme fonksiyonun x2 oldugunu gösteriniiz
+x^2+2x+1<= x^2+2x^2+x^2   = x^2+2x+1<=4x^2   c 4 ve k 1 için bu durum sağlanır
+
+F(n)= 	 1/2 n^2 +3n
+G(n) = n2	 üst sınırın O(n2) oldugunu gösteriniz
+F((1/2)n^2+3n O(n^2) =0
+0<=1/2 n^2 +3n <=c*n2  c>0  n>0
+c=1 ve n^0 = 6 için
+1/2 n^2 +3n {O(n2) önermesi doğrudur. 
+
+Bir tane ikili olması yeterli c ve n ikili dediğimiz şey 
+
+Büyüme oranı Fonksiyonlarının Özellikleri
+
+1-Bir algoritmanın büyüme oranı fonksiyonunda düşük dereceli terimler sabitler ve katsayılar ihmal edilebilir.Kısacası  500 n^2+ 800n olsun cevap n^2 idir
+2- Algoritmanın büyüme fonksiyonları birleştirebiliriz. O(n^3) +O(4n^2) = O(n^3+4n^2) evap = n^3
+
+
+
+f(n)3n^2+2n+5=0(n2) oldugunu gösteriniz.
+g(n) n^2
+0<= f(n)<=pvc.g(n) ,c>0, n>0
+0<=3n^2+2n+5<= n^2.c sağlıyor n koydugumuzda sağlamıyor
+
+
+Notasyonlarda Eşitlik Gösterimi
+A=B B=A Sadece bu ifade için geçerlidir 
+Fakat f(n) = O(g(n)), O(g(n)) = f(n) anlamına gelmez tek eşitlik söz konusudur.
+Burada "=", üyelik işlemi (ϵ) olarak tercih edilmiştir.
+f(n) = O(g(n)) "elamanıdır işareti " f(n) ϵ O(g(n)) dir
+O(g(n)) bir küme anlamına gelir.
+f(n) = O(g(n)) "elamanıdır işareti"  O(g(n)) ={ f(n) gösterimi doğrudur
+
+
+
+OHM SİMGELEMİ(ALT SATIRLAR)  F(n) :Tüm n>=n_0
+			 	    c>0 ,  n_0> 0
+				    0<= c.g(n)<= f(n)
+
+
+	
+Her durumda f(n) >= c. g(n) ve n>=n0 koşullarını sağlayan  pozitif,sabit c ve n0 değerleri bulanabiliyorsa f(n)= Ohm işareti(g(N))
+
+2n+5 elamanıdır ohm işareti(n) oldugunu gösteriniz 
+
+
+Q Notasyonu Sıkı Sınırlar uuuj
+Her durumda c1.g(n)<=f(n)<= c2.g(n) 
+ n>=n0 koşulları sağlayan pozitif,sabit c1,c2 ve n0 değerleri bulanabiliyorsa  f(n)= Q(g(n))
+
+2n+5  Q 
+
+
+
+Kesiştikleri için n2
+
+
+
+ Stack (Yığın)
+Son giren ilk çıkar mantıgıyla çıkar(Bir elemman ekleneceğinde yığının en üstünden konulur.Çıkarılcağı zaman en üstten çıkartılır
+Push ile ekleriz pop ile çıkartırız elemanı
+Eleman ekleme çıkarmaları en üstten yapıldığı veri yapısa yığın denir
+Stack =  Veri .
+Yığın yapısı oluşturmak için 2 yol vardır  Array ve Bağlantılı Liste    
+Diziler sabit boy ama bağlantılı liste sonsuz boyut
+Dizi Tabanlı Yığın 
+Bir yığını gerçekleşmenin en gerçeklemenin en kolay yolu dizi kullanmaktır.Yığın yapısı dizi üzerine en fazla N tane eleman tutucak şekilde yapılabilir.
+Nesneleri soldan sağa doğru ekleriz.Bir değişken en üstteki nesnenin index bilgisi izler. Eleman çıkarılırken bu index değeri alınır.
+
+Yığın(Stack) nerelerde kullanabiliriz  farklı farklı yerde gezerken sekmeler arası dolaşma mantıgı veya sitedeki geri butonu gibi düşün veya son arattıgın şeyin karşına cıkması ctrl z  syntax hatası
+Push işlemi esnasında dizi dolu ise ne yapabilriiz? 
+Yığın boyutu büyütcez
+
+KOD YAZARKEN BOYUT KONTROL ÖNCE
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#define max_boyut 3 //yığın boyutunu sınırı
+struct Stack{
+ int data[max_boyut];
+ int top;
+};
+void push(struct Stack *stack, int girdi){
+ 
+ if(stack->top>=max_boyut-1){//yıgının boyutunun kontrolü
+ printf("Yığın dolu.\n");
+ return;
+ }
+ stack->data[++stack->top]=girdi;
+}
+int pop(struct Stack *stack){
+ if(stack->top<0){// eleman olup olmadıgının kontrolü
+ printf("Yıgın boş");
+ return -1; //hata durumu işaretleme
+ }
+ return stack->data[stack->top--];
+}
+void yazdir(struct Stack * stack){
+ if(stack->top<0){
+ printf("Yıgında eleman yok");
+ return;
+ }
+ 
+ printf("yıgın elemanları:");
+ for(int i=0;i<=stack->top;i++)
+ {
+ printf("%d",stack->data[i]);
+ }
+ printf("\n");
+}
+int en_son(struct Stack * stack){
+ if(stack->top<0){
+ printf("yıgın boş");
+ return -1;
+ }
+ return stack->data[stack->top];
+}
+int main()
+{
+ struct Stack stack;
+ stack.top=-1;
+ 
+ push(&stack,4);
+ push(&stack,6);
+ push(&stack,8);
+ push(&stack,2);
+ yazdir(&stack);
+ 
+ pop(&stack);
+ yazdir(&stack);
+ return 0;
+} 
+
+
+Ağaç Veri Modeli
+Bağlı listeler yığıtlar doğrusal veri yapılarıdır.Ağaçlar doğrusal olmayan veri yapılarıdır.
+İki boyutlu veri yapılarıdır.
+Hiyeraşik ilişkileri göstrmek için kullanılır
+Her ağaç node lar ve kenarlardan oluşur 
+Her bir node bir nesneyi gösterir.
+Her bir kenar iki node arasındaki ilişyki gösterir
+
+Uygulamaları
+Organizasyon şeması, Dosya Sistemleri , Program Ortamları 
+
+Binary Tree özelliği  Sıralı olmasıdır. Bigo da katsayı önemsemiyoruz logn dir
+
+En az 1 en fazla 3  ikili ağaç için
+
+leaf root giderken yükseklik       
+root dan leaf giderken Düzeylik
+
+Ataları muhabbeti kendi üzerindekiler oluyor
+
+Ağaçtan kesin soru var rez al
+
+
+Ağaç Türleri
+İkili Arama Ağacı :Bir düğüm en fazla iki tane çocuğa sahip olabilir ve alt çocuk bağlantıları belirli bir sırada yapılır
+Kodlama Ağacı: Kümedeki karekterle kod ataması için kurulan ağaç şeklidir.
+Sözlük Ağacı : Sözcüklerin tutulması için kurulan bir ağaçtur.Amaç arama işlemi en performanslı bir şekilde yapılması ve belleğin optimumu kullanılmasııdr.
+Kümeleme Ağacı: Bir çeşit sıralama ağacıdır. Çocuk düğümler her zaman aile düğümlerinden daha küçük değerlere sahip olur.
+
+BİNARY TREE
+Sonlu düğümler kümesidir.
+Kök olarak adlandırılan özel bir düğüm vardır
+Her düğüm en fazla iki düğüme bağlı
+Kök hariç her düğüm bir  daldan gelir	
+
+Derinlik düzlük işte aşağıdan sayma muhabbeti  N=  2^d -1
+En küçük derinlik  log(N) Sebebi her bir adımda yarıyı devre dışı bırakıyoruz
+
+Complete Binary Tree 
+Full binary tree de yeni  bir derinliğe soldan sağa doğru düğümler eklendiğinde oluşan ağaçlara denir.
+T, n yükseklikte complete binary tree ise, tüm yaprak node’ları n veya n-1 derinliğindedir ve yeni bir derinliğe 
+soldan sağa doğru ekleme başlanır.
+Her node iki tane child node’a sahip olmayabilir
+
+Full Binary Tree
+Her yaprağı aynı derinlikte olan
+Yaprak  olmayan düğümlerin tümünün iki çocuğu olan
+n tane yaprak varsa 2n-1  tane düğüm var
+
+Balanced Binary 
+
+Yükseliği ayarlanmış ağaçlardır
+Bütün   düğümler için sol alt ağacın  yükseliği ile sağ alt ağacın yükseliği arasında en fazla bir fark varsa buna balacned binary tree denir
+
+Geçiş İşlemleri 
+İkili Ağaçlar Üzerindeki Geçiş İşlemleri :
+Preorder : Kök- Sol alt  sağ alt
+Inorder: Sol alt- Kök-Sağ alt ağacı 
+Postorder: Sol-Sağ Kök
+Level Order Düzey  düzey sır	
