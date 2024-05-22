@@ -1,0 +1,64 @@
+				TV
+			+  channel: int 
+			+  volumelevel:int
+			+  status : boolean
+		
+
+
+		       + TV()
+			+ turnOn() :void
+			+ turnOff() : Void
+			
+			+setChannel(ch:int)  : void
+
+			+ setVolumeLevel(vol:int) : void
+			+ volumeUp(): void	
+			+volumeDown():void
+
+			channelUp(): void
+			channelDown(): void
+
+
+			
+			 
+public class TV {
+	
+		public int volumeLevel ;
+ 			public int channel  ; 
+				public boolean status ;
+	public TV() {
+		
+		public void  turnOn() 
+		{
+			status =  true;
+			System.out.println("Tv Açıldı");
+		}
+		public void turnOff() {
+			status = false;
+			System.out.println("Tv Kapandı");
+		}
+		public void setChannel(int ChannelNo) {
+				this.channel= ChannelNo;
+	
+		}
+		public void setVolumeLevel(int vol) {
+			this.volumeLevel= vol;
+		}
+		public  void VolumeUp() {
+			volumeLevel++;
+		}
+		public void VolumeDown() {
+			volumeLevel--;
+		}
+		public void ChannelUp() {
+			channel++;
+		}
+		public void ChannelDown() {
+			channel--;
+		}
+
+	}
+}
+}
+
+			

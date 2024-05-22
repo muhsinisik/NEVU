@@ -1,0 +1,127 @@
+Tasarım Prensepleri
+Ayrıştırma
+Daha az karmaşık yönetebilirlik açısından daha kolay 
+Alt sistemlerin diğer alt sistemlerinden bağımsız olarak değiştirilmesi
+
+Kohezyon ( Uyum) 
+Sınıf üyelerinn birbiri arasındaki içindeki mantıksal ilişki 
+Tasarımdan yüksek kohezyondan beklenilir.Kohezyon faydası esnekliği arttırır
+Coupling ( Bağlantı) :
+Nesneler birbine ne kadar bağlı olduğunun ölçüsüdür.
+ İyi bir tasarımda coupling az olması beklenir.
+Nil Coupling : 
+Teorik olarak en düşük ve en iyi coupling düzeyidir.
+Diğer sınıflarla hiçbir ilgisi olmayan tek başlarından kullanılan sınıflardır.
+Export Coupling : **********
+Herhangi bir sınıf başka bir sınıfa ortak bir interface bağlıysa aralarında export coupling oluşur
+
+Overt Coupling : ******	
+Bir sınıf başka bir sınıfa ilişkin üyeleri belli bir izin dahilinde kullanıyorsa aralarında overt coupling söz konusudur.
+
+Covert Coupling : 	
+Bir sınıf,başka bir sınıfa herhangi bir izin vermeden arkadaşlık kurması durumudur.
+
+Surreptitious (Gizlice) Coupling
+Bir sınıf, başka bir sınıfın içsel 
+detaylarının tümünü biliyorsa ve bunları 
+kullanarak işlem gerçekleştiriyorsa bu 
+sınıfların arasında surreptitious coupling
+oluşur.
+• Tasarım açısından tehlikelidir.
+• Bağımlılık, prensip gereğince az olması 
+gerekirken, bu seviyedeki coupling’de çok fazladır
+
+
+Reusability 
+Mirasın ( is a ilişkisi)   has a ilişkileri ile sağlanıla bilen bir özelliktir
+Bir sınıfın sağladıgı özelliği başka sınıfta da kullanabilmek
+
+SOLİD PRENSİPLERİ :
+
+Single Responsbility  Principle : Baba diyor ki birden fazla işlevi olan sınıfların tasarım hatası vardır 
+
+
+İyi yapılmış bir modellemede ileride yaşanacak  olası değişikllikte  sadcee değişen durumun sınıfı değişir geri kalan tasarımda değişiklik olmaz 
+
+Her sınıfın sadece bir amacı olmalı
+Birden fazla amaç yüklemek tasarım problmemidir
+ Bir sınıfı değiştirmek için sadece tek bir gerekçeniz
+
+
+Open Close  (Açık Kapalı Prensibi) : Bişey eklemek istiyorum ama sen izin vermiyorsan bu open close sıkıntıyoa giriyor 
+
+ Soyutlama ile sağlanabilir.
+• Genişletilmeye açık (open extension)
+• Değiştirilmeye kapalı (close modification
+Yeni bir şey eklemek istedeğimizde sorun çıkyor ise burda open close prensibi sıkıntıya giriyor . 
+	
+
+
+Liskov substitution Principle : Polymoprhisim yanlış kullanıyor burda
+
+Araba sınıfının bir alt sınfıının  olarak bir otomobil sınıfı tanımlanabilir.
+
+
+
+
+• Bir programdaki nesneler, alt tiplerin nesneleri ile programın 
+doğruluğunu değiştirmeden yer değiştirilebilir olmalı
+• Çok biçimliliğin yanlış kullanılması ile ilgili
+• Derleme zamanı hata değil mantıksal hata oluşturmayı engeller
+• Alt sınıf her durumda üst sınıfın yerine kullanılabilmelİ 
+Downcast yapmak zorunda kalmamalı
+
+Alt   Sınıfı Her Durumda Üst Sınıfın Yerine Kullanabilmeli :
+The signature rule :
+a. Metot parametreleri
+• Bu kural, override olmuş alt tür metodu değişken türlerinin, üst tür metodu 
+değişken türleriyle aynı veya onlardan daha geniş olabileceğini belirtir.
+• Java da override kuralları bunu sağıyor
+b. Geri dönüş değer türü 
+• Override olmuş alt tür metodunun dönüş türü, üst tür yönteminin dönüş türüne 
+eşit ya da daha dar olabilir.
+
+
+The properties rule
+A-)Sınıf değişkenleri arasındaki ilişki kuralı :
+
+değişkenler arası bir kural varsa nesnenin tüm 
+geçerli durumları için sağlanmalıdır.
+
+B-)Geçmiş Kısıtlaması
+• Alt sınıf yöntemleri (kalıtsal veya yeni), temel sınıfın izin 
+vermediği durum değişikliklerine izin vermemelidir.
+ 
+Başta değeri değiştirdin daha değiştirilemez.
+
+C-) Method Rule :
+Ön koşullar
+• Override olan bir metot çalışmadan önce bir koşul varsa bu koşul zayıflatılabilir ancak  güçlendirilmez
+ • Override olan bir metod çalıştıktan sonra üretilecek değer üst
+ sınıfın kurallarına uymalı
+
+Liskov yerine geçme prensibinin delindiğini 
+nasıl anlarız
+
+Bir alt tür, gerçekleştiremediği bir davranış için istisna atıyorsa
+• Bir alt tür, gerçekleştiremeyeceği bir davranış için uygulama 
+sağlamıyorsa
+• İstemci kodunun instanceof veya downcasting kullanması gerekiyorsa,
+• Bir alt tür yöntemi her zaman aynı değeri döndürüyorsa
+
+InterFace Segregation Principle : Birden fazla method programı mahvediyor bu yüzden interfaceleri parçayabiliyoruz,
+
+(Arayüz Ayırma Prensibi)( Kısacası gereksiz yere method basma  tasarım zoralşıyor ama kod esnek oluyor
+Sınıflar kullanmayacakları metotların implemantasyonuna
+zorlanmamalı
+• Soyut sınıf içerikleri şişkin olmamalı
+• Farklı amaçlar için çok fazla metot içermemeliler
+• Alt sınıfların bütün metotları gerçekleştirmesi gerekecektir.
+• Bir uygulamanın tasarım aşamasında daha fazla zaman ve çaba 
+gerektirip ve kod karmaşıklığını artırsa da, sonunda esnek bir kod elde 
+ederiz
+Dependency inversion principle :  Diyor ki ben bişeye bağlanmama bana soyut bir şeyler ver 
+(bağımlılığı ters çevirme prensibi)
+• Üst seviye modüller alt seviye modüllere bağlı olmamalı. İkisi de 
+soyutlamaya bağlı olmalı
+• Soyutlama detaya bağlı olmamalı, detay soyutlamaya bağlı olmalı

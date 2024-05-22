@@ -1,0 +1,45 @@
+			Calculator
++result : double
+Calculator()
++ add(a:double,b : double): double
++ subtract(a:double, b: double) : double 
++ multiplay(a: double , b:double): double
++  divide (a:double, b: double): double
+
+
+Kodlamada
+
+public class Calculator{
+ public double result:
+ public Calculator(){
+	this.result=0;
+}
+
+public double add(double a,double b){
+	result=a+b;
+	return  result;
+}
+public double substract(double a,double b){
+	result=a-b;
+	return  result;
+}
+public double multiplay(double a,double b){
+	result=a*b;
+	return  result;
+}
+public double divide(double a,double b){
+	if(b !=0){
+	result=a/b;
+}
+else {
+	System.out.pritln("B =0 olamaz);
+}
+
+	return  result;
+}
+
+main oluşturduk
+Calculator calculator = new Calculator;
+
+Syso (calculator. add(7.8));
+calculator.divide(15/3)

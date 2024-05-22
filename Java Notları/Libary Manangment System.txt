@@ -1,0 +1,28 @@
+				Libary Manangment System
+			
+			
+
+				Person : 
+			- ıd : String
+			- namme : String 
+
+				
+	
+		Librarian				Student 				inheritince person:					
+	- UserName: String 			 + borrowBook() :void 	
+	- Password: String			
+	+ manageBook() : void 
+	+ manageStudent() : void 
+						Book 
+						+id : int	
+						+ISBN : int
+						+title: string
+						+author: String 
+						+publisher : String 
+						 +add(): void
+						 +update : void 
+
+
+
+Librarian and stundent interhince 
+Librarian and student Association

@@ -1,0 +1,16 @@
+public class OgrenciIsleri {
+	
+	private IOgrenci ogrenci;
+
+	public OgrenciIsleri(IOgrenci ogrenci) {
+		this.ogrenci = ogrenci;
+	}
+
+	public void stajDegerlendir() {
+		ogrenci.setDersler("Staj", ogrenci.setNot());
+	}
+}
+
+OgrenciIsleri o = new OgrenciIsleri(new OnLisansOgrencisi);
+
+o.stajDegerlendir();

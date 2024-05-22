@@ -1,0 +1,29 @@
+Tasarım Kalıpları : 
+
+Singleton :  Bir nesnenin yalnızca bir örneğinini oluşturulmasını sağlar.
+
+Bir sınıftan kaç nesne üretilidğiin kontrol etmek istediğimiz zaman kullanılır.
+
+Programda bir den fazla kanal varsa singleton sınıftan birden fazla 
+nesne türetilmesi söz konusu olabilir.
+Singleton da clone alınabilir mi ? 
+
+Cloneu alınırsa singleton olmaktan cıkar. 
+
+Factory : 
+Bir nesneyi oluşturmanın  en iyi yolunu sağlar
+Oluşturma  mantığı istemciye göndermeden nesne oluşturuyoruz ve ortak bir arayüz kullanılarak yeni oluşturulan nesneyi atıfta buluyoruz
+
+ProtoType : 
+
+
+Bazen bir nesneyi üretmek  çok maliyetli olabilir
+ Bu durunda nesne program  çalıştırlırken bir kez prototip olarak oluşturulur.
+
+Nesne Tabanlı Programın Özellikleri: 
+
+
+Soyutlama(Abstraction)
+Kapsüllleme(Encapsulation)
+Inheritance(Miras Alma)
+Çok Biçimlilik(Polymorphisim)

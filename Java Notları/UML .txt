@@ -1,0 +1,80 @@
+UML : 
+
+Farklı amaçlar için tasalarnmış çizimler 
+Sistemler ve süreçler farklı seviyelerde görsel olarak tasarlanabilir.
+
+
+Association (Referans,Birliktelik)
+
+Has a ilişkisi bulunur
+Bir sınıfın diğer sınıf türünden nesne referansı içermesi 
+ * belirsiz
+0..1 Var ya da  yok
+1...* Bir ya da sonsuz 
+m..n 2 değer arasınnda
+0 .. * Hiç ya da sonsuz
+
+
+
+En üstte yazan Class ismi
+İlk kısım Attributeler 
+İkinci kısım  Methodlar construcatorlar  Getter-Setter lar
+
+
+En Üst: 
+Abstract Sınıfın adı italik olarak yazılır 
+
+İlk Kısım 
+1.adım
+
++ PUBLİC
+ - private 
+#protected 
+yatay s  package 
+2.adım variable yazmak
+3.adım İki nokta koyup data türünde yazmak
+ 
+İkinci Kısım :
+1.adım Uygun sembölü koymak 
+2.adım Method adınız yazmak
+3. adım iki nokta koyup  return type yazmak
+
+Association(Referans Birliktelik)
+Has a ilişkisi 
+Dümdz ok işareti 
+	Aggregation ( Barındırma İçerme )                                  
+ Association bağlantının özel bir türüdür.
+Parça bütün ilişkisi oldugu ifade eder Dörtgen ok 
+		Compozition ( Bağımlılık )
+Parça bütün ilişkisi
+Dümdüz Ok
+
+Generilazition (Genelleme )(Inherıtınce)
+Kalıtım sürecini modeller ( extends ) Miras
+ İs a ilişkisi belirler 
+İçi boş ok
+Dümdüz çizgi önü boş üçgen 
+
+
+Realization (Gerçekleme) / Implementation :
+
+İnterface implamentasyonunda ifade eder.	
+------ içi boş üçgen
+
+
+Dependency(Bağımlılık )
+
+İki sınıf arasındaki bir bağımlılık olduğuu ifade eder .
+Has a ya da is-a ilişkisi yok
+----- kafada bir şapka
+Bağımlılık ilişkisi, client sınıfının aşağıdaki işlevlerden birini 
+gerçekleştirdiğini gösterir:
+• Geçici olarak global kapsamı olan bir Supplier sınıfını kullanır 
+• Geçici olarak bir Supplier sınıfını metodlarından biri için parametre olarak 
+kullanır 
+• Geçici olarak bir Supplier sınıfını kendi metodlarından biri için yerel değişken 
+olarak kullanır 
+• Supplier sınıfına bir mesaj gönderir
+
+
+
